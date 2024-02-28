@@ -1,10 +1,10 @@
 import instaloader
 
-L = instaloader.Instaloader()
+iceri_al = instaloader.Instaloader()
 
 username = "kullanıcıAdı"
 password = "Şifreniz"
-L.login(username, password)  # (login)
+iceri_al.login(username, password)  # (login)
 
 profile = instaloader.Profile.from_username(L.context, username)
 
