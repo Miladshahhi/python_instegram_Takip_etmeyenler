@@ -6,7 +6,7 @@ username = "kullanıcıAdı"
 password = "Şifreniz"
 iceri_al.login(username, password)  # (login)
 
-profile = instaloader.Profile.from_username(L.context, username)
+profile = instaloader.Profile.from_username(iceri_al.context, username)
 
 # Takipçileri al
 followers_file = "takipci.txt"
