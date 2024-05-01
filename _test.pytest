@@ -1,0 +1,14 @@
+import pytest
+from main_file_name import *
+
+def test_get_followers():
+    # امتحان می‌کنیم که آیا لیستی از تعداد مشخصی از دنبال‌کنندگان برگردانده می‌شود یا نه
+    assert len(profile.get_followers()) > 0
+
+def test_get_followees():
+    # امتحان می‌کنیم که آیا لیستی از تعداد مشخصی از دنبال شوندگان برگردانده می‌شود یا نه
+    assert len(profile.get_followees()) > 0
+
+def test_unfollowers():
+    # امتحان می‌کنیم که آیا لیست تعدادی از افرادی که شما را دنبال می‌کنند اما شما آن‌ها را دنبال نمی‌کنید، به درستی بازگردانده می‌شود یا نه
+    assert len(unfollowers_set) > 0
